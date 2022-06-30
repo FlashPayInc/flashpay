@@ -193,7 +193,7 @@ const Home = () => {
                     Go to app
                   </a>
                 </div>
-                {width > 900 ? (
+                {!!(width < 900) ? (
                   <img src="/img/svg/footer-mask.svg" alt="" />
                 ) : (
                   <img src="/img/svg/footer-mask-mobile.svg" alt="" />
