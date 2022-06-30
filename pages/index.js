@@ -11,7 +11,13 @@ const Home = () => {
         <div className="landing_container">
           <div className="landing_nav">
             <img src="/img/svg/logo.svg" alt="" className="landing_logo" />
-            <button className="continue_button">Go to Flashpay app</button>
+            <a
+              target="blank"
+              href="https://app.flashpay.finance"
+              className="continue_button"
+            >
+              Go to Flashpay app
+            </a>
           </div>
           {/* HERO SECTION */}
           <div className="hero">
@@ -187,11 +193,9 @@ const Home = () => {
                     Go to app
                   </a>
                 </div>
-                {width > 1024 ? (
-                  // <AppSvgs type={"footer-mask"} />
+                {width > 900 ? (
                   <img src="/img/svg/footer-mask.svg" alt="" />
                 ) : (
-                  // <AppSvgs type={"footer-mask-mobile"} />
                   <img src="/img/svg/footer-mask-mobile.svg" alt="" />
                 )}
               </div>
