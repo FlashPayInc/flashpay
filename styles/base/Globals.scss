@@ -17,6 +17,7 @@ body {
   font-family: $sans;
   position: relative;
   flex-direction: column;
+  overflow-x: hidden;
 
   * {
     font-family: $sans;
