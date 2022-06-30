@@ -28,7 +28,13 @@ const Home = () => {
                 </p>
               </div>
 
-              <button className="continue_button">Go to Flashpay app</button>
+              <a
+                target="blank"
+                href="https://app.flashpay.finance/"
+                className="continue_button"
+              >
+                Go to Flashpay app
+              </a>
 
               <div className="built_on">
                 <p>Built on</p>
@@ -172,7 +178,14 @@ const Home = () => {
                   <p className="section_title">
                     Create payment links for customers.
                   </p>
-                  <button>Go to app.</button>
+
+                  <a
+                    target="blank"
+                    href="https://app.flashpay.finance/"
+                    className="continue_button"
+                  >
+                    Go to app
+                  </a>
                 </div>
                 {width > 1024 ? (
                   // <AppSvgs type={"footer-mask"} />

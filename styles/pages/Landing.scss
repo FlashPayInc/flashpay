@@ -322,7 +322,7 @@
             color: $col-wh;
             @include hdLineHeight();
           }
-          button {
+          a {
             color: $main-col;
             width: max-content;
             font-size: $font-sm;
