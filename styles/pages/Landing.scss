@@ -136,10 +136,10 @@
 
   .offers {
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     align-items: center;
     justify-content: center;
-    padding: 0px $padding-horizontal;
+    padding: 0px $padding-horizontal 0px;
     flex-direction: column;
 
     .offers_header {
@@ -176,6 +176,7 @@
     // height: 400vh;
     min-height: 100vh;
     display: flex;
+    align-items: center;
     flex-direction: row;
 
     .features_content {
@@ -211,7 +212,6 @@
       }
       .features_img {
         flex: 1;
-        height: 100%;
         padding-top: 6%;
         position: relative;
         align-items: flex-end;
@@ -279,17 +279,18 @@
 
   footer {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     position: relative;
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0px $padding-horizontal;
+    padding: 4vh $padding-horizontal 0px;
 
     .footer_design_cover {
       flex: 1;
       width: 100%;
+      margin-bottom: 135px;
       position: relative;
       align-items: center;
       justify-content: center;
@@ -320,6 +321,7 @@
             font-family: $sansmed;
             margin-bottom: 20px;
             color: $col-wh;
+            max-width: 600px;
             @include hdLineHeight();
           }
           a {
@@ -333,6 +335,12 @@
         }
         img {
           width: 100%;
+          &.hideDesktop {
+            display: none;
+          }
+          &.showDesktop {
+            display: flex;
+          }
         }
         svg {
           max-width: 100%;
@@ -453,7 +461,7 @@
     .features {
       height: max-content;
       min-height: 80vh;
-      padding: 0px;
+      padding: 6vh 0px 0px;
       flex-direction: column !important;
       .features_content {
         height: max-content;
@@ -502,9 +510,12 @@
     }
 
     footer {
-      padding: 15vh 0px 0px;
+      padding: 15vh 0px 0px !important;
       .footer_bg {
         display: none;
+      }
+      .footer_design_cover {
+        margin-bottom: -50px !important;
       }
       .foot_design {
         align-items: center;
@@ -512,6 +523,12 @@
         img {
           max-width: 100%;
           // max-height: 1000px;
+          &.hideDesktop {
+            display: flex !important;
+          }
+          &.showDesktop {
+            display: none !important;
+          }
         }
         .section_cont {
           width: 388px;

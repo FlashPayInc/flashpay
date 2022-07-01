@@ -1,10 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AppSvgs from "./AppSvgs";
-import { useWindowSize } from "@react-hook/window-size/throttled";
 
 const Home = () => {
-  const [width] = useWindowSize();
-
   return (
     <>
       <div className="container">
@@ -157,7 +154,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="api_preview">
+          {/* <div className="api_preview">
             <p className="section_header">API & SDKs</p>
 
             <div className="section_content">
@@ -174,7 +171,8 @@ const Home = () => {
                 <img src="/img/svg/api-preview.svg" alt="" />
               </div>
             </div>
-          </div>
+          </div> */}
+
           <footer>
             <div className="footer_design_cover">
               <div className="foot_design">
@@ -193,11 +191,17 @@ const Home = () => {
                     Go to app
                   </a>
                 </div>
-                {!!(width < 900) ? (
-                  <img src="/img/svg/footer-mask.svg" alt="" />
-                ) : (
-                  <img src="/img/svg/footer-mask-mobile.svg" alt="" />
-                )}
+
+                <img
+                  src="/img/svg/footer-mask-mobile.svg"
+                  alt=""
+                  className="hideDesktop"
+                />
+                <img
+                  src="/img/svg/footer-mask.svg"
+                  alt=""
+                  className="showDesktop"
+                />
               </div>
             </div>
 
