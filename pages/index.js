@@ -21,13 +21,11 @@ const Home = () => {
             <div className="hero__block">
               <div className="hero_text">
                 <p className="main">
-                  Accept crypto payments in Algorand assets
+                  Accept crypto payments with FlashPay
                   {/* Collect payments <br /> in crypto asset. */}
                 </p>
                 <p className="sub">
-                  FlashPay is a payments infrastructure built on Algorand that
-                  allows merchants and business owners to receive payments
-                  directly from their customers in Algorand- based assets.
+                  FlashPay is a payment system that enables businesses and merchants to accept payments in the form of cryptocurrency directly from their customers.
                 </p>
               </div>
 
@@ -40,7 +38,7 @@ const Home = () => {
               </a>
 
               <div className="built_on">
-                <p>Built on</p>
+                <p>Supported Blockchains</p>
                 <svg
                   width="106"
                   height="30"
@@ -101,20 +99,19 @@ const Home = () => {
                 <div className="offer_icon">
                   <img src="/img/svg/rocket.svg" alt="" />
                 </div>
-                <p className="offer_text_main">Fast</p>
+                <p className="offer_text_main">Speed</p>
                 <p className="offer_text_sub">
-                  Receive payments from your customers in seconds. Algorand
-                  blockchain can process up to 1000 transactions per second.
+                  Flashpay allows you to receive payments from your customers in seconds. 
+                  It leverages on the speed and high throughput offered by the different supported blockchains.
                 </p>
               </div>
               <div className="offer_block">
                 <div className="offer_icon">
                   <img src="/img/svg/click.svg" alt="" />
                 </div>
-                <p className="offer_text_main">Easy</p>
+                <p className="offer_text_main">Multi-Blockahin Support</p>
                 <p className="offer_text_sub">
-                  Set up your account easily and be ready to receive payments in
-                  a few minutes.
+                Flashpay plans to support multiple blockchains to give users more choice in terms of speed and security.
                 </p>
               </div>
               <div className="offer_block">
@@ -123,8 +120,9 @@ const Home = () => {
                 </div>
                 <p className="offer_text_main">Secure</p>
                 <p className="offer_text_sub">
-                  FlashPay is built directly on the Algorand Blockchain, which
-                  provides high security for transactions.
+                  Flashpay supports highly secure blockchains and 
+                  leverages on this high security to process transactions 
+                  in a fast and secure manner.
                 </p>
               </div>
             </div>
@@ -140,10 +138,10 @@ const Home = () => {
                   <p>Create payment links for customers.</p>
                 </li>
                 <li>
-                  <p>Connect your Algo wallet.</p>
+                  <p>Integrate our APIs and SDKs.</p>
                 </li>
                 <li>
-                  <p>See your transactions.</p>
+                  <p>Transaction monitoring.</p>
                 </li>
               </ul>
 
